@@ -1,0 +1,904 @@
+---
+import { Image } from 'astro:assets';
+import LogoImg from '../assets/images/logo.png';
+import LineImg from '../assets/images/line.png';
+import LightImg from '../assets/images/light.png';
+import IconImg from '../assets/images/icon.png';
+import Icontop1Img from '../assets/images/icon-top1.png';
+import Icontop2Img from '../assets/images/icon-top2.png';
+import Icontop3Img from '../assets/images/icon-top3.png';
+import Icontop4Img from '../assets/images/icon-top4.png';
+import Foto1Img from '../assets/images/foto-1.png';
+import Foto2Img from '../assets/images/foto-2.png';
+import Foto3Img from '../assets/images/foto-3.png';
+import Foto4Img from '../assets/images/foto-4.png';
+import Foto5Img from '../assets/images/foto-5.png';
+import Foto6Img from '../assets/images/foto-6.png';
+import ArrowImg from '../assets/images/arrow.png';
+import Arrow2Img from '../assets/images/arrow-2.png';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GranFort</title>
+</head>
+<body>
+    <header>
+        <a href="#hero"><Image src={LogoImg} alt=""/></a>
+        <nav>
+            <a class="a_nav" href="#compani">О компании</a>
+            <a class="a_nav" href="#product">Продукция</a>
+            <a class="a_nav" href="#prime">Преимущества</a>
+            <a class="a_nav" href="#info">Под заказ</a>
+            <a class="a_nav" href="#contact">Контакты</a>
+        </nav>
+
+        <div class="div_header">
+            <p class="p_header">+7 (900) 000-00-00</p>
+        <button class="btn_header">Оставить заявку</button>
+        </div>        
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero_one">
+            <div class="hero_one_text">
+                <div class="title">
+                    <Image src={LineImg} alt=""/>
+                    <p class="p_title">Тюнинг китайских внедорожников</p>
+                </div>
+
+                <h1>Защита бамперов из нержавеющей стали</h1>
+
+                <p>Комплекты для JAC T9 и Haval H3 из стали AISI 304 с зеркальной полировкой и чёрного металла с порошковым покрытием. Ставятся без сверления кузова.</p>
+
+                <div class="hero_button">
+                    <button class="btn">Выбрать комплект <Image src={ArrowImg} alt=""/></button>
+
+                    <button class="btn_hero">Заказать под мой авто</button>
+                </div>
+            </div>
+
+            <Image class="img_hero" src={Foto1Img} alt=""/>
+        </div>
+
+        <div class="hero_two">
+            <div class="hero_two_text"> 
+                <h2 class="hero_h2">AISI 304</h2>
+                <p class="hero_p">нержавеющая сталь с зеркальной полировкой</p>
+            </div>
+
+            <div class="hero_two_text">
+                <h2 class="hero_h2">AISI 304</h2>
+                <p class="hero_p">нержавеющая сталь с зеркальной полировкой</p>
+            </div>
+
+            <div class="hero_two_text">
+                <h2 class="hero_h2">AISI 304</h2>
+                <p class="hero_p">нержавеющая сталь с зеркальной полировкой</p>
+            </div>
+
+            <div class="hero_two_text">
+                <h2 class="hero_h2">AISI 304</h2>
+                <p class="hero_p">нержавеющая сталь с зеркальной полировкой</p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="compani" id="compani">
+        <div class="div_compani">
+            <div class="title">
+                <Image src={LineImg} alt=""/>
+                <p class="p_title">О компании</p>
+            </div>
+
+            <h2>Тюнинг для китайских внедорожников и пикапов</h2>
+
+            <p class="p_compani">ГРАНФОРТ производит силовую защиту передних и задних бамперов: из нержавеющей стали AISI 304 с зеркальной полировкой и из чёрного металла с порошковым покрытием.</p>
+            
+            <p class="p_compani">Готовых решений для китайских автомобилей пока немного — мы развиваем это направление и расширяем ассортимент.</p>
+        </div>
+
+        <Image class="img_compani" src={Foto2Img} alt=""/>
+    </section>
+
+    <section class="product" id="product">
+        <div class="product_one">
+            <div class="title">
+                <Image src={LineImg} alt=""/>
+                <p class="p_title">Продукция</p>
+            </div>
+
+            <h2>Готовые комплекты защиты</h2>
+        </div>
+
+        <div class="product_two">
+            <div class="product_card">
+                <Image class="img_card" src={Foto3Img} alt=""/>
+                <div class="div_card">
+                    <p class="p_card_icon">JAC T9</p>
+                    <h3>Задняя защита бампера</h3>
+                    <p class="p_card">Нержавеющая сталь AISI 304, зеркальная полировка</p>
+                    <p class="card_sum">от 00 000 ₽</p>
+                    <button class="btn_card">Подробнее <Image src={Arrow2Img} alt=""/></button>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <Image class="img_card" src={Foto4Img} alt=""/>
+                <div class="div_card">
+                    <p class="p_card_icon">HAVAL H3</p>
+                    <h3>Передняя защита бампера</h3>
+                    <p class="p_card">Чёрный металл, порошковое покрытие</p>
+                    <p class="card_sum">от 00 000 ₽</p>
+                    <button class="btn_card">Подробнее <Image src={Arrow2Img} alt=""/></button>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <Image class="img_card" src={Foto5Img} alt=""/>
+                <div class="div_card">
+                    <p class="p_card_icon">HAVAL H3</p>
+                    <h3>Задняя защита бампера</h3>
+                    <p class="p_card">Чёрный металл, порошковое покрытие</p>
+                    <p class="card_sum">от 00 000 ₽</p>
+                    <button class="btn_card">Подробнее <Image src={Arrow2Img} alt=""/></button>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <Image class="img_card" src={Foto6Img} alt=""/>
+                <div class="div_card">
+                    <p class="p_card_icon">JAC T9</p>
+                    <h3>Передняя защита бампера</h3>
+                    <p class="p_card">Нержавеющая сталь AISI 304, зеркальная полировка</p>
+                    <p class="card_sum">от 00 000 ₽</p>
+                    <button class="btn_card">Подробнее <Image src={Arrow2Img} alt=""/></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prime" id="prime">
+        <div class="prime_one">
+            <div class="title">
+                <Image src={LineImg} alt=""/>
+                <p class="p_title">Преимущества</p>
+            </div>
+            <h2>Почему выбирают ГРАНФОРТ </h2>
+        </div>
+
+        <div class="div_grid">
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">01</p>
+                </div>
+                <h3>Качественные материалы</h3>
+                <p class="p_icon_text">Нержавеющая сталь AISI 304 и внимание к деталям на каждом этапе производства.</p>
+            </div>
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">02</p>
+                </div>
+                <h3>Установка без сверления</h3>
+                <p class="p_icon_text">Крепление на штатные точки — не нужно сверлить или дорабатывать кузов.</p>
+            </div>
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">03</p>
+                </div>
+                <h3>Комплект или под ключ</h3>
+                <p class="p_icon_text">Купите комплект для самостоятельной установки или закажите монтаж у нас.</p>
+            </div>
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">04</p>
+                </div>
+                <h3>Индивидуальная разработка</h3>
+                <p class="p_icon_text">Спроектируем и изготовим защиту под вашу модель автомобиля.</p>
+            </div>
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">05</p>
+                </div>
+                <h3>Доставка по всей России</h3>
+                <p class="p_icon_text">Отправляем продукцию в любой регион транспортными компаниями.</p>
+            </div>
+            <div class="prime_icon">
+                <div class="icon">
+                    <Image src={IconImg} alt=""/>
+                    <p class="p_icon">06</p>
+                </div>
+                <h3>Китайский автопром</h3>
+                <p class="p_icon_text">Специализируемся на китайских внедорожниках и пикапах.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info" id="info">
+        <div class="info_one">
+            <div class="info_text">
+                <div class="title">
+                <Image src={LineImg} alt=""/>
+                <p class="p_title">Под заказ</p>
+                </div>
+                <h2>Нет комплекта для вашего авто? Сделаем</h2>
+            </div>
+            <p class="p_info">Разработаем и изготовим защиту под вашу модель — учтём пожелания по материалу и внешнему виду.</p>            
+        </div>
+        <div class="info_two">   
+            <div class="info_block">
+                <Image src={Icontop1Img} alt=""/>
+                <h3>Заявка</h3>
+                <p class="p_block">Присылаете марку, модель и год выпуска автомобиля.</p>
+            </div>
+            <div class="info_block">
+                <Image src={Icontop2Img} alt=""/>
+                <h3>Замеры и проект</h3>
+                <p class="p_block">Согласовываем внешний вид, материал и крепление.</p>
+            </div>
+            <div class="info_block">
+                <Image src={Icontop3Img} alt=""/>
+                <h3>Производство</h3>
+                <p class="p_block">Изготавливаем защиту из нержавейки или чёрного металла.</p>
+            </div>
+            <div class="info_block">
+                <Image src={Icontop4Img} alt=""/>
+                <h3>Установка</h3>
+                <p class="p_block">Ставим под ключ или отправляем комплект в ваш город.</p>
+            </div>        
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact_one">
+            <div class="contact_title">
+                <div class="title">
+                <Image src={LineImg} alt=""/>
+                <p class="p_title">Контакты</p>
+                </div>
+                <h2>Оставьте заявку</h2>
+            </div>
+            <p class="contact_text">Подберём комплект или рассчитаем защиту под ваш автомобиль.</p>
+            <div class="contact_info">
+                <div class="contact_info_strong">
+                    <Image src={IconImg} alt=""/>
+                    <div class="contact_info_text">
+                        <p class="p_signature">Телефон</p>
+                        <p class="p_contact">+7 (900) 000-00-00</p>
+                    </div>
+                </div>
+
+                <div class="contact_info_strong">
+                    <Image src={IconImg} alt=""/>
+                    <div class="contact_info_text">
+                        <p class="p_signature">Почта</p>
+                        <p class="p_contact">info@granfort.ru</p>
+                    </div>
+                </div>
+
+                <div class="contact_info_strong">
+                    <Image src={IconImg} alt=""/>
+                    <div class="contact_info_text">
+                        <p class="p_signature">Адрес</p>
+                        <p class="p_contact">г. Город, ул. Улица, д. 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" method="post">
+            <div class="form_punct">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="user_name" placeholder="Как к вам обращаться">
+            </div>
+            
+            <div class="form_punct">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="+7 (___) ___-__-__">
+            </div>
+            
+            <div class="form_punct">
+               <label for="car">Автомобиль</label>            
+            <input type="text" id="car" name="user_car" placeholder="Марка, модель и год выпуска"> 
+            </div>            
+            
+            <button class="btn_form" type="submit">Отправить <Image src={ArrowImg} alt=""/></button>
+            
+            <p class="p_policy">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</p>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer_nav">
+            <a href="#hero"><Image src={LogoImg} alt=""/></a>
+            <nav>
+                <a class="a_footer" href="#compani">О компании</a>
+                <a class="a_footer" href="#product">Продукция</a>
+                <a class="a_footer" href="#prime">Преимущества</a>
+                <a class="a_footer" href="#info">Под заказ</a>
+                <a class="a_footer" href="#contact">Контакты</a>
+            </nav>
+            <div class="div_footer">
+                <p class="p_number">+7 (900) 000-00-00</p>
+                <p class="p_mail">info@granfort.ru</p>
+            </div>
+        </div>
+        <div class="footer_text">
+            <p class="p_footer_text">© 2026 ГРАНФОРТ. Все права защищены.</p>
+            <p class="p_footer_text">Политика конфиденциальности</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Unbounded:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0D1613;
+}
+
+button {
+    background-color: #F2C230;
+    color: #1C1703;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #EEF2EE;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Unbounded';
+}
+
+h2 {
+    color: #EEF2EE;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Unbounded';
+    font-size: 18px;
+    font-weight: 700;
+    color: #EEF2EE;
+}
+
+p {
+    color: #93A59C;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px 20px 28px;
+    font-size: 16px;
+    font-weight: 600; 
+    height: 56px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+}
+
+.p_title {
+    font-weight: 600;
+    font-size: 13px;
+    color: #F2C230;
+}
+
+section {
+    padding: 96px 120px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0D1613;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 120px;
+    border-bottom: 1px solid #26372F;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.div_header {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.a_nav {
+    color: #EEF2EE;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.p_header {
+    color: #EEF2EE;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.btn_header {
+    padding: 15px 20px;
+    font-size: 14px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.hero {
+    background-color: #0D1613;
+    background-image: url('../assets/images/light.png');
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hero_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+}
+
+.hero_one_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    width: 46%;
+    flex-shrink: 0;
+}
+
+.hero_button {
+    display: flex;
+    gap: 12px;
+}
+
+.btn_hero {
+    padding: 0 28px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #EEF2EE;
+    background-color: transparent;
+    border: 1.5px solid #A9B8B0;
+}
+
+.hero_two {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.hero_two_text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    gap: 8px;
+    border-top: 1px solid #26372F;
+}
+
+.hero_h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #F2C230;
+}
+
+.hero_p {
+    font-size: 14px;
+}
+
+.img_hero {
+    width: 48%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.compani {
+    background-color: #14201B;
+    padding: 112px 120px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.div_compani {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+}
+
+.img_compani {
+    width: 50%;
+    height: auto;
+}
+
+.p_compani {
+    font-size: 16px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding: 112px 120px;
+}
+
+.product_two {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.product_card {
+    background-color: #1C2B25;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #26372F;
+    overflow: hidden;
+    flex: 1;
+}
+
+.div_card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+}
+
+.btn_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1.5px solid #A9B8B0;
+    height: 44px;
+    gap: 10px;
+    color: #EEF2EE;
+    font-weight: 600;
+}
+
+.p_card_icon {
+    background-color: #0D1613;
+    color: #F2C230;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+.p_card {
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #26372F;
+}
+
+.card_sum {
+    font-size: 20px;
+    font-weight: 700;
+    color: #EEF2EE;
+}
+
+.prime {
+    background-color: #14201B;
+    padding: 112px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.prime_one {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.div_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.prime_icon {
+    border: 1px solid #26372F;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p_icon {
+    font-family: 'Unbounded';
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.p_icon_text {
+    font-size: 16px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.info_one {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 55%;
+}
+
+.p_info {
+    font-size: 16px;
+    width: 30%;
+}
+
+.info_two {
+    display: flex;
+    gap: 24px;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.p_block {
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    padding: 112px 120px;
+    gap: 64px;
+    background-color: #14201B;
+}
+
+.contact_title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact_one {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 50%;
+}
+
+.contact_text {
+    font-size: 16px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_info_strong {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.p_signature {
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.p_contact {
+    font-size: 16px;
+    font-weight: 600;
+    color: #EEF2EE;
+}
+
+form {
+    background-color: #0D1613;
+    border: 1px solid #26372F;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.form_punct {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: #93A59C;
+    font-size: 14px;
+}
+
+input {
+    background-color: #1C2B25;
+    color: #EEF2EE;
+    border: 1px solid #26372F;
+    border-radius: 6px;
+    padding: 13px 16px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #93A59C;
+}
+
+.btn_form {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.p_policy {
+    font-size: 12px;
+}
+
+footer {
+    background-color: #14201B;
+    padding: 48px 120px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 46px;
+}
+
+.a_footer {
+    font-size: 14px;
+    color: #EEF2EE;
+}
+
+.div_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.p_number {
+    font-size: 16px;
+    font-weight: 600;
+    color: #EEF2EE;
+}
+
+.p_mail {
+    font-size: 14px;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #26372F;
+    padding-top: 32px;
+}
+
+.p_footer_text {
+    font-size: 12px;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 22px 80px;
+    }
+
+    section {
+        padding: 60px 80px;
+    }
+    
+    .compani, .product, .prime, .contact {
+        padding: 56px 80px;
+    }
+
+    nav {
+        gap: 20;
+    }
+
+    .a_nav {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .btn_header {
+        padding: 8px 12px;
+    }
+
+    .p_header {
+        font-size: 15px;
+    }
+}
+</style>
