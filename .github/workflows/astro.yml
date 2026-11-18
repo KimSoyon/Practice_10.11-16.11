@@ -20,10 +20,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
+      - name: Install dependencies
+        working-directory: ./GranFord
+        run: npm install
+      - name: Build Astro site
+        working-directory: ./GranFord
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: "GranFord"
+          path: ./GranFord/dist
 
   deploy:
     needs: build
