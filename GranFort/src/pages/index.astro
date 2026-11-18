@@ -41,7 +41,7 @@ import Arrow2Img from '../assets/images/arrow-2.png';
 
         <div class="div_header">
             <p class="p_header">+7 (900) 000-00-00</p>
-        <button class="btn_header">Оставить заявку</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({dehavior: 'smoth'})" class="btn_header">Оставить заявку</button>
         </div>        
     </header>
 
@@ -58,9 +58,9 @@ import Arrow2Img from '../assets/images/arrow-2.png';
                 <p>Комплекты для JAC T9 и Haval H3 из стали AISI 304 с зеркальной полировкой и чёрного металла с порошковым покрытием. Ставятся без сверления кузова.</p>
 
                 <div class="hero_button">
-                    <button class="btn">Выбрать комплект <Image src={ArrowImg} alt=""/></button>
+                    <button onclick="document.getElementById('product').scrollIntoView({dehavior: 'smoth'})" class="btn">Выбрать комплект <Image src={ArrowImg} alt=""/></button>
 
-                    <button class="btn_hero">Заказать под мой авто</button>
+                    <button onclick="document.getElementById('contact').scrollIntoView({dehavior: 'smoth'})" class="btn_hero">Заказать под мой авто</button>
                 </div>
             </div>
 
@@ -426,7 +426,8 @@ img {
 
 section {
     padding: 96px 120px;
-    width: 100%
+    width: 100%;
+    scroll-margin-top: 88px;
 }
 
 header {
