@@ -238,22 +238,22 @@ import Arrow2Img from '../assets/images/arrow-2.png';
         </div>
         <div class="info_two">   
             <div class="info_block">
-                <Image src={Icontop1Img} alt=""/>
+                <Image class="img_line" src={Icontop1Img} alt=""/>
                 <h3>Заявка</h3>
                 <p class="p_block">Присылаете марку, модель и год выпуска автомобиля.</p>
             </div>
             <div class="info_block">
-                <Image src={Icontop2Img} alt=""/>
+                <Image class="img_line" src={Icontop2Img} alt=""/>
                 <h3>Замеры и проект</h3>
                 <p class="p_block">Согласовываем внешний вид, материал и крепление.</p>
             </div>
             <div class="info_block">
-                <Image src={Icontop3Img} alt=""/>
+                <Image class="img_line" src={Icontop3Img} alt=""/>
                 <h3>Производство</h3>
                 <p class="p_block">Изготавливаем защиту из нержавейки или чёрного металла.</p>
             </div>
             <div class="info_block">
-                <Image src={Icontop4Img} alt=""/>
+                <Image class="img_line" src={Icontop4Img} alt=""/>
                 <h3>Установка</h3>
                 <p class="p_block">Ставим под ключ или отправляем комплект в ваш город.</p>
             </div>        
@@ -700,6 +700,11 @@ nav {
     align-items: flex-end;
 }
 
+.img_line{
+    width: 100%;
+    height: auto;
+}
+
 .info_text {
     display: flex;
     flex-direction: column;
@@ -910,7 +915,8 @@ footer {
     }
 
     .img_hero {
-        width: 48%
+        width: 48%;
+        height: auto;
     }
 }
 </style>
